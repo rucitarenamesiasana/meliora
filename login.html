@@ -1,197 +1,100 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Login MELIORA</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
-}
-
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:#cdd9e6;
-}
-
-/* BACKGROUND SHAPE */
-
-body:before{
-content:"";
-position:absolute;
-width:600px;
-height:600px;
-background:#f3f5f9;
-border-radius:50%;
-top:-150px;
-left:-150px;
-}
-
-body:after{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:#f3f5f9;
-border-radius:50%;
-bottom:-150px;
-right:-150px;
-}
-
-/* LOGIN CARD */
-
-.login-card{
-width:380px;
-background:white;
-padding:35px;
-border-radius:18px;
-box-shadow:0 12px 20px rgba(0,0,0,0.15);
-position:relative;
-z-index:2;
-}
-
-.logo{
-text-align:center;
-margin-bottom:15px;
-}
-
-.logo img{
-width:70px;
-}
-
-h2{
-text-align:center;
-margin-bottom:5px;
-color:#1c2c4c;
-}
-
-.subtitle{
-text-align:center;
-font-size:14px;
-color:#777;
-margin-bottom:20px;
-}
-
-/* INPUT */
-
-.form-group{
-margin-bottom:15px;
-}
-
-label{
-font-size:14px;
-font-weight:600;
-color:#333;
-display:block;
-margin-bottom:5px;
-}
-
-input{
-width:100%;
-padding:12px;
-border-radius:10px;
-border:1px solid #dfe4ec;
-font-size:14px;
-}
-
-input:focus{
-outline:none;
-border-color:#2f67d8;
-}
-
-/* OPTIONS */
-
-.options{
-display:flex;
-justify-content:space-between;
-align-items:center;
-font-size:13px;
-margin-bottom:18px;
-}
-
-.options a{
-color:#2f67d8;
-text-decoration:none;
-}
-
-/* BUTTON */
-
-button{
-width:100%;
-padding:12px;
-background:#2457c5;
-color:white;
-border:none;
-border-radius:12px;
-font-size:16px;
-cursor:pointer;
-margin-bottom:10px;
-}
-
-button:hover{
-background:#1e4fb0;
-}
-
-/* REGISTER */
-
-.register{
-text-align:center;
-font-size:14px;
-}
-
-.register a{
-color:#2457c5;
-text-decoration:none;
-font-weight:600;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Kids Learning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="font-sans text-gray-700">
 
-<body>
+<!-- Navbar -->
+<header class="flex justify-between items-center p-5 shadow">
+  <h1 class="text-xl font-bold text-orange-500">fable</h1>
+  <nav class="space-x-6 hidden md:block">
+    <a href="#" class="hover:text-orange-500">Home</a>
+    <a href="#">Pages</a>
+    <a href="#">Courses</a>
+    <a href="#">Teacher</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-<div class="login-card">
+<!-- Hero Section -->
+<section class="grid md:grid-cols-2 items-center p-10 bg-gray-50">
+  <div>
+    <p class="text-orange-400 mb-2">Friendly Atmosphere</p>
+    <h2 class="text-4xl font-bold mb-4">Welcoming Place <br> For Every Child</h2>
+    <button class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow">Start Learn More</button>
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="rounded-xl" />
+  </div>
+</section>
 
-<div class="logo">
-<img src="logo.png" alt="Meliora Logo">
-</div>
+<!-- Features Section -->
+<section class="p-10 grid md:grid-cols-3 gap-6 text-center">
+  <div class="p-6 shadow rounded-xl">
+    <h3 class="font-bold text-lg mb-2">Creative Learning</h3>
+    <p>Belajar dengan metode yang menyenangkan dan interaktif.</p>
+  </div>
+  <div class="p-6 shadow rounded-xl">
+    <h3 class="font-bold text-lg mb-2">Expert Teacher</h3>
+    <p>Dibimbing oleh pengajar berpengalaman.</p>
+  </div>
+  <div class="p-6 shadow rounded-xl">
+    <h3 class="font-bold text-lg mb-2">Safe Environment</h3>
+    <p>Lingkungan belajar yang aman dan nyaman.</p>
+  </div>
+</section>
 
-<h2>Masuk ke MELIORA</h2>
-<p class="subtitle">Gunakan akun sekolah untuk melanjutkan.</p>
+<!-- Courses Section -->
+<section class="bg-gray-100 p-10">
+  <h2 class="text-3xl font-bold text-center mb-8">Our Classes</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="font-bold">Basic Computer</h3>
+      <p>Belajar dasar komputer dari nol.</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="font-bold">Design Class</h3>
+      <p>Kelas desain grafis untuk anak.</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow">
+      <h3 class="font-bold">Coding Class</h3>
+      <p>Belajar coding dengan cara fun.</p>
+    </div>
+  </div>
+</section>
 
-<form>
+<!-- CTA Section -->
+<section class="p-10 text-center bg-orange-500 text-white">
+  <h2 class="text-3xl font-bold mb-4">Join With Us Now</h2>
+  <p class="mb-6">Mulai perjalanan belajar anakmu sekarang juga!</p>
+  <button class="bg-white text-orange-500 px-6 py-3 rounded-lg">Daftar Sekarang</button>
+</section>
 
-<div class="form-group">
-<label>Email / Username</label>
-<input type="text" placeholder="contoh: guru@sekolah.sch.id">
-</div>
-
-<div class="form-group">
-<label>Kata Sandi</label>
-<input type="password" placeholder="••••••••">
-</div>
-
-<div class="options">
-<label><input type="checkbox"> Ingat saya</label>
-<a href="#">Lupa kata sandi?</a>
-</div>
-
-<button type="submit">Masuk</button>
-
-<div class="register">
-Belum punya akun? <a href="#">Daftar</a>
-</div>
-
-</form>
-
-</div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white p-10 grid md:grid-cols-3 gap-6">
+  <div>
+    <h3 class="font-bold mb-3">About</h3>
+    <p>Platform pembelajaran terbaik untuk anak-anak.</p>
+  </div>
+  <div>
+    <h3 class="font-bold mb-3">Links</h3>
+    <ul class="space-y-2">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3 class="font-bold mb-3">Contact</h3>
+    <p>Email: info@dhuocreative.com</p>
+    <p>Phone: 0812-xxxx-xxxx</p>
+  </div>
+</footer>
 
 </body>
 </html>
